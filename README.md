@@ -2,10 +2,15 @@
 A simple JavaScript module with helper functions for working with **cookies**.
 
 ## Usage
-To use this module in your project, simply include the Cookie.js file in your HTML like this:
+To use this module in your project, simply import the Cookie.js file in your  main JavaScript file like this:
 
+```javascript
+import {setCookie, getCookie, delCookie} from "./cookie.js"
+```
+
+in html most be type of script is `module`
 ```html
-<script src="path/to/Cookie.js"></script>
+<script type="module" src="main.js"></script>
 ```
 
 Then, you can call the exported functions in your JavaScript code:
