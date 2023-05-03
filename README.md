@@ -1,5 +1,10 @@
 # Cookie.js
-A simple JavaScript module with helper functions for working with **cookies**.
+The `cookie.js` module contains several functions that make it easy to work with cookies in JavaScript.
+
+#### Some of the functions included in this module are:
+- **setCookie(name, value, days)**: Sets a cookie with the given name, value, and expiration time (in days).
+- **getCookie(name)**: Retrieves the value of the cookie with the given name.
+- **deleteCookie(name)**: Deletes the cookie with the given name.
 
 ## Usage
 To use this module in your project, simply import the Cookie.js file in your  main JavaScript file like this:
