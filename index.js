@@ -1,3 +1,3 @@
-import {setCookie, getCookie, DeleteCookie} from "./cookie.js"
-export {setCookie, getCookie, DeleteCookie}
+import {setCookie, getCookie, deleteCookie} from "./cookie.js"
+export {setCookie, getCookie, deleteCookie}
 

@@ -35,5 +35,5 @@ function deleteCookie(name) {
     }
 }
 
-export { setCookie, getCookie, delCookie };
+export { setCookie, getCookie, deleteCookie };
 // By Mahdi Hazrati

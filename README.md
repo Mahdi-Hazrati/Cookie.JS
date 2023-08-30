@@ -14,16 +14,19 @@ import {setCookie, getCookie, deleteCookie} from "./cookie.js"
 ```
 
 in html most be type of script is `module` for enable using import.
+
 ```html
 <script type="module" src="index.js"></script>
 ```
 ## Example
 in `React` firit install with npm:
+
 `npm install work-with-cookie`
+
 then import to your project and use it:
 
 ```jsx
-import {setCookie, getCookie, DeleteCookie} from "work-with-cookie"
+import {setCookie, getCookie, deleteCookie} from "work-with-cookie"
 
 setCookie("theme", "dark", "/", 365")
 
@@ -40,7 +43,9 @@ Example:
 setCookie('username', 'Mahdi Hazrati', '/', 7);
 // get cookie value
 console.log(getCookie("username"))
+
 ```
+## getCookie(`name`)
 Retrieve the value of the cookie with the given name. It searches for the cookie in the list of all cookies stored on the document object. If the cookie is found, its value is returned. If not, undefined is returned.
 
 Example:
