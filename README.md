@@ -2,9 +2,9 @@
 The `cookie.js` module contains several functions that make it easy to work with cookies in JavaScript.
 
 #### Some of the functions included in this module are:
-- **setCookie(name, value, days)**: Sets a cookie with the given name, value, and expiration time (in days).
-- **getCookie(name)**: Retrieves the value of the cookie with the given name.
-- **deleteCookie(name)**: Deletes the cookie with the given name.
+- **setCookie(`name`, `value`, `days`)**: Sets a cookie with the given name, value, and expiration time (in days).
+- **getCookie(`name`)**: Retrieves the value of the cookie with the given name.
+- **deleteCookie(`name`)**: Deletes the cookie with the given name.
 
 ## Usage
 To use this module in your project, simply import the Cookie.js file in your  main JavaScript file like this:
@@ -20,13 +20,15 @@ in html most be type of script is `module`
 
 Then, you can call the exported functions in your JavaScript code:
 
-## setCookie(name, value, path, expiresDay)
+## setCookie(`name`, `value`, `path`, `expiresDay`)
 Create a new cookie with the given **name**, **value**, **path** and **expiration day**. The name and value parameters are mandatory, while path and expiresDay are optional. The expiresDay parameter specifies the number of days after which the cookie will expire.
 
 Example:
 ```javascript
-setCookie('username', 'JohnDoe', '/', 7);
-getCookie(name)
+// create new cookie
+setCookie('username', 'Mahdi Hazrati', '/', 7);
+// get cookie value
+console.log(getCookie("username"))
 ```
 Retrieve the value of the cookie with the given name. It searches for the cookie in the list of all cookies stored on the document object. If the cookie is found, its value is returned. If not, undefined is returned.
 
@@ -39,7 +41,7 @@ if (username) {
     console.log('Welcome!');
 }
 ```
-## delCookie(name)
+## delCookie(`name`)
 Delete the cookie with the given name by setting its expiration date to a time in the past (one day ago). If the cookie does not exist, nothing happens.
 
 Example:
