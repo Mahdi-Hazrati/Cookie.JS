@@ -1,5 +1,5 @@
 # Cookie.js
-The `cookie.js` module contains several functions that make it easy to work with cookies in JavaScript.
+The `work-with-cookie` module and a minial npm package contains several functions that make it easy to work with cookies in JavaScript.
 
 #### Some of the functions included in this module are:
 - **setCookie(`name`, `value`, `days`)**: Sets a cookie with the given name, value, and expiration time (in days).
@@ -7,18 +7,29 @@ The `cookie.js` module contains several functions that make it easy to work with
 - **deleteCookie(`name`)**: Deletes the cookie with the given name.
 
 ## Usage
-To use this module in your project, simply import the Cookie.js file in your  main JavaScript file like this:
+To use this module in your project, simply import the `cookie.js` file in your  main JavaScript file like this:
 
 ```javascript
-import {setCookie, getCookie, delCookie} from "./cookie.js"
+import {setCookie, getCookie, deleteCookie} from "./cookie.js"
 ```
 
-in html most be type of script is `module`
+in html most be type of script is `module` for enable using import.
 ```html
-<script type="module" src="main.js"></script>
+<script type="module" src="index.js"></script>
+```
+## Example
+in `React` firit install with npm:
+`npm install work-with-cookie`
+then import to your project and use it:
+
+```jsx
+import {setCookie, getCookie, DeleteCookie} from "work-with-cookie"
+
+setCookie("theme", "dark", "/", 365")
+
 ```
 
-Then, you can call the exported functions in your JavaScript code:
+## Wiki
 
 ## setCookie(`name`, `value`, `path`, `expiresDay`)
 Create a new cookie with the given **name**, **value**, **path** and **expiration day**. The name and value parameters are mandatory, while path and expiresDay are optional. The expiresDay parameter specifies the number of days after which the cookie will expire.
@@ -41,12 +52,12 @@ if (username) {
     console.log('Welcome!');
 }
 ```
-## delCookie(`name`)
+## deleteCookie(`name`)
 Delete the cookie with the given name by setting its expiration date to a time in the past (one day ago). If the cookie does not exist, nothing happens.
 
 Example:
 ```javascript
-delCookie('username');
+deleteCookie('username');
 ```
 
 ### License
