@@ -26,7 +26,7 @@ function getCookie(name) {
 }
 
 // a function for delete cookie from given cookie name
-function delCookie(name) {
+function deleteCookie(name) {
     if (name) {
         let date = new Date();
         date.setTime(date.getTime() - 1 * 24 * 60 * 60 * 1000);
@@ -36,3 +36,4 @@ function delCookie(name) {
 }
 
 export { setCookie, getCookie, delCookie };
+// By Mahdi Hazrati

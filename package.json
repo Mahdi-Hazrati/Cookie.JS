@@ -1,0 +1,22 @@
+{
+  "name": "work-with-cookie",
+  "version": "1.0.0",
+  "description": "work-with-cookie is a lightweight and minimal npm package specifically designed to simplify cookie handling in your JavaScript or TypeScript applications. With its easy-to-use functionalities, it allows you to effortlessly manage, retrieve, update, and delete cookies within your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahdi-Hazrati/Cookie.JS.git"
+  },
+  "keywords": [
+    "cookie"
+  ],
+  "author": "Mahdi Hazrati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mahdi-Hazrati/Cookie.JS/issues"
+  },
+  "homepage": "https://github.com/Mahdi-Hazrati/Cookie.JS#readme"
+}
